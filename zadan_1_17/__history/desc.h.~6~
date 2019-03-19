@@ -1,0 +1,14 @@
+#ifndef DESC
+#define DESC
+
+class Complex {
+	private:
+		double real;
+		double imagine;
+	public:
+		Complex(double a, double b);
+		Complex operator+(Complex);
+		Complex operator-(Complex);
+		Complex operator*(Complex);
+};
+#endif DESC

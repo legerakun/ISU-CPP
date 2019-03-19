@@ -1,0 +1,41 @@
+#include<conio.h>
+#include<stdio.h>
+#include "desc.h"
+#include "func_class.cpp"
+
+int main(){
+	double a, b, c, p, f, k, g, h;
+
+	printf("Input a =");
+	scanf("%lf", &a);
+	printf("Input b =");
+	scanf("%lf", &b);
+
+	printf("%.3lf %.3lf\n", a, b);
+
+	printf("Input c =");
+	scanf("%lf", &c);
+	printf("Input d =");
+	scanf("%lf", &p);
+
+	printf("%.3lf %.3lf\n", c, p);
+
+	Complex x(a,b), y(c,p), q, w, e;
+
+	f = d.outA();
+	k = d.outB();
+	g = d.ComplexModule();
+	h = d.ComplexArgument();
+	q = x + y;
+	w = x - y;
+	e = x * y;
+
+	printf("Your complex number is %.3lf + %.3lfi\n", f, k);
+	printf("Your module is %.3lf\n", g);
+	printf("Your argument is %.3lf\n", h);
+	printf("Summ is %.3lf.%.3lf\n", q.a, q.b);
+	printf("Razn is %.3lf.%.3lf\n", w.a, w.b);
+	printf("Umnoj is %.3lf.%.3lf\n", e.a, e.b);
+
+    getch();
+}

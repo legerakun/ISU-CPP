@@ -1,0 +1,41 @@
+#ifndef FUNC
+#define FUNC
+#include<conio.h>
+#include<stdio.h>
+#include<math.h>
+#include "desc.h"
+
+Complex::Complex(double a, double b){
+	real = a;
+	imagine = b;
+}
+
+Complex::Complex(){
+	real = 0.0;
+	imagine = 0.0;
+}
+
+Complex Complex::operator+(Complex x){
+	Complex num;
+	num.real = real + x.real;
+	num.imagine = imagine + x.imagine;
+
+	return num;
+}
+
+Complex Complex::operator-(Complex x){
+	Complex num;
+	num.real = a - x.real;
+	num.imagine = b - x.imagine;
+
+	return num;
+}
+
+Complex Complex::operator*(Complex x){
+	Complex num;
+	num.real = a * x.real - b * x.imagine;
+	num.imagine = a * x.imagine + b * x.imagine;
+
+	return num;
+}
+#endif FUNC
