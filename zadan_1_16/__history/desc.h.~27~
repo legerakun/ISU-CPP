@@ -1,0 +1,14 @@
+#ifndef DESC
+#define DESC
+
+class Complex {
+	private:
+		double real;
+		double imagine;
+	public:
+        Complex(int a, int b);
+		int out();
+	//void FuncArgument();
+	//void FuncModule();
+};
+#endif

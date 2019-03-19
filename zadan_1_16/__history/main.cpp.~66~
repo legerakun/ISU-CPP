@@ -1,0 +1,27 @@
+#include<conio.h>
+#include<stdio.h>
+#include "desc.h"
+#include "func_class.cpp"
+
+int main(){
+	double a, b, f, k, g, h;
+
+	printf("Input a =");
+	scanf("%lf", &a);
+	printf("Input b =");
+	scanf("%lf", &b);
+
+	printf("%lf %lf\n", a, b);
+	Complex d = Complex(a, b);
+
+	f = d.outA();
+	k = d.outB();
+	g = d.ComplexModule();
+	h = d.ComplexArgument();
+
+	printf("Your complex number is %lf + %lfi\n", f, k);
+	printf("Your module is %lf\n", g);
+	printf("Your argument is %lf", h);
+
+    getch();
+}
